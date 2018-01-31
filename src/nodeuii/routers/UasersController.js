@@ -8,6 +8,13 @@ export default class UserAPI {
     this.user = user;
   }
 
+  @route('/')
+  @GET()
+  @before([authenticate()])
+  async getJson(ctx) {
+    ctx.body = {data: 'data'}
+  }
+
   @route('/:id')
   @GET()
   @before([authenticate()])

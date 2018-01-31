@@ -4,10 +4,10 @@ function request(){
     return supertest('http://localhost:3000');
 }
 
-describe('GET /getData',function(){
+describe('GET /getJson',function(){
     it('respond with json', function(done){
         request()
-            .get('/getdata')
+            .get('/users')
             .expect(200)
             .end(function(err, res){
                 console.log(res.body)

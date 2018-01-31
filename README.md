@@ -23,6 +23,9 @@ node app.js
 
 # 发布环境
 npm run build
+
+# 发布环境
+npm run test
 ```
 ## 项目结构
 ```
