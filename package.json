@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:dev": "cross-env NODE_ENV=development&& webpack --progress --watch",
+    "build:dev": "cross-env NODE_ENV=development webpack --progress --watch",
     "build:prod": "cross-env NODE_ENV=production webpack && cross-env NODE_ENV=production gulp"
   },
   "author": "1361996625@qq.com",
